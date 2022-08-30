@@ -1,0 +1,518 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Personal portfolio</title>
+  <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css' %}">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+  <!-- ////////////////////////////////////////////////////////////////////////////////////////
+                               START SECTION 1 - THE NAVBAR SECTION  
+/////////////////////////////////////////////////////////////////////////////////////////////-->
+  <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="">
+        <span>SOFTDEV</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">About me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">contact</a>
+          </li>
+        </ul>
+        <button type="button" class="rounded-pill btn-rounded">
+          +233 50 9279 792
+          <span>
+            <i class="fas fa-phone-alt"></i>
+          </span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- /////////////////////////////////////////////////////////////////////////////////////////////////
+                            START SECTION 2 - THE INTRO SECTION  
+/////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+  <section id="home" class="intro-section">
+    <div class="container">
+      <div class="row align-items-center text-white">
+        <!-- START THE CONTENT FOR THE INTRO  -->
+        <div class="col-md-6 intros text-start">
+          <h1 class="display-2">
+            <span class="display-2--intro">Hey!, I'm Solomon</span>
+            <span class="display-2--description lh-base">
+              I AM A SOFTWARE DEVELOPER
+            </span>
+          </h1>
+          <a style="text-decoration:none" href="#contact"><button type="button" class="rounded-pill btn-rounded">HIRE ME
+
+            </button></a>
+        </div>
+        <!-- START THE CONTENT FOR THE VIDEO -->
+        <div class="col-md-6 intros text-end">
+          <div class="video-box">
+            <img src="{% static 'images/arts/intro-section-illustration.png' %}" alt="video illutration" class="img-fluid">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#ffffff" fill-opacity="1"
+        d="M0,160L48,176C96,192,192,224,288,208C384,192,480,128,576,133.3C672,139,768,213,864,202.7C960,192,1056,96,1152,74.7C1248,53,1344,107,1392,133.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+      </path>
+    </svg>
+  </section>
+
+  <!-- //////////////////////////////////////////////////////////////////////////////////////////////
+                             START SECTION 3 - THE CAMPANIES SECTION  
+////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+
+  <!-- //////////////////////////////////////////////////////////////////////////////////////////////
+                         START SECTION 4 - THE SERVICES  
+///////////////////////////////////////////////////////////////////////////////////////////////////-->
+  <section id="services" class="services">
+    <div class="container">
+      <div class="row text-center">
+        <h1 class="display-3 fw-bold">ABOUT ME</h1>
+        <div class="heading-line mb-1"></div>
+      </div>
+      <!-- START THE DESCRIPTION CONTENT  -->
+      <div class="row pt-2 pb-2 mt-0 mb-3">
+        <div class="col-md-6 border-right">
+          <div class="bg-white p-3">
+            <img src="{% static 'images/arts/programmer.png' %}" alt="video illutration" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="bg-white p-4 text-start">
+            <p class="fw-light">
+              Result driven and motivated self taught software developer from Ghana with demonstration experience in improving
+              software performance and updating software. I am ambitious,adventurous and willing to learn.
+
+            </p>
+            <p class="fw-light">
+              Result driven and motivated self taught software developer from Ghana with demonstration experience in improving
+              software performance and updating software. I am ambitious,adventurous and willing to learn.
+              
+            </p>
+
+            <a class="primary_btn" href="#"><span>Download CV</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- START THE CONTENT FOR THE SERVICES  -->
+    <div class="container">
+      <!-- START THE MARKETING CONTENT  -->
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+          <div class="services__content">
+            <div class="icon d-block fas fa-paper-plane"></div>
+            <h3 class="display-3--title mt-1">Mobile development</h3>
+            <p class="lh-lg">
+              With my two years experience in flutter and dark language,I can confortable build a mobile application from scratch
+              for both android devices and ios devices
+            </p>
+            <button type="button" class="rounded-pill btn-rounded border-primary">Learn more
+              <span><i class="fas fa-arrow-right"></i></span>
+            </button>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
+          <div class="services__pic">
+            <img src="{% static 'images/services/service-1.png' %}" alt="marketing illustration" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      <!-- START THE WEB DEVELOPMENT CONTENT  -->
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-start">
+          <div class="services__pic">
+            <img src="{% static 'images/services/service-2.png' %}" alt="web development illustration" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+          <div class="services__content">
+            <div class="icon d-block fas fa-code"></div>
+            <h3 class="display-3--title mt-1">web development</h3>
+            <p class="lh-lg">
+              I have 4 years experience in web development and with my knowledge in HTML, CSS,JAVASCRIPT and PYTHON being my favorite language, i can build a full
+              stack application using DJANGO or FLASK framework
+            </p>
+            <button type="button" class="rounded-pill btn-rounded border-primary">HIRE ME
+              <span><i class="fas fa-arrow-right"></i></span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- START THE CLOUD HOSTING CONTENT  -->
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+          <div class="services__content">
+            <div class="icon d-block fas fa-cloud-upload-alt"></div>
+            <h3 class="display-3--title mt-1">API development</h3>
+            <p class="lh-lg">
+             Flask is a great framework used for building fast Api.As a python developer i can build scalable Api with flask 
+            </p>
+            <button type="button" class="rounded-pill btn-rounded border-primary">View Projects
+              <span><i class="fas fa-arrow-right"></i></span>
+            </button>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
+          <div class="services__pic">
+            <img src="{% static 'images/services/service-3.png' %}" alt="cloud hosting illustration" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ////////////////////////////////////////////////////////////////////////////////////////////////
+                               START SECTION 5 - THE TESTIMONIALS  
+/////////////////////////////////////////////////////////////////////////////////////////////////////-->
+  
+
+  <!-- /////////////////////////////////////////////////////////////////////////////////////////////////
+                       START SECTION 6 - THE FAQ 
+//////////////////////////////////////////////////////////////////////////////////////////////////////-->
+  <section id="faq" class="faq">
+    <div class="container">
+      <div class="row text-center">
+        <h1 class="display-3 fw-bold text-uppercase">TECHNOLOGIES</h1>
+        <div class="heading-line"></div>
+        <p class="lead">Programming languages, frameworks and tools used for development</p>
+      </div>
+      <!-- ACCORDION CONTENT  -->
+      <div class="row mt-5">
+        <div class="col-md-12">
+          <div class="accordion" id="accordionExample">
+            <!-- ACCORDION ITEM 1 -->
+            <div class="accordion-item shadow mb-3">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  FRONTEND TECHNOLOGIES
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  {% for data in frondEndSkills %}
+                  <div class="card">
+                    <div class="card-body">
+                      {{data.name}}
+                    </div>
+                  </div>
+                  {% endfor %}
+              </div>
+            </div>
+            </div>
+            <!-- ACCORDION ITEM 2 -->
+            <div class="accordion-item shadow mb-3">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  BACKEND TECHNOLOGIES
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  {% for data in backendSkills %}
+                  <div class="card">
+                    <div class="card-body">
+                      {{data.name}}
+                    </div>
+                  </div>
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
+            <!-- ACCORDION ITEM 3 -->
+            <div class="accordion-item shadow mb-3">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  DATABASE AND SERVER TECHNOLOGIES
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  {% for data in server %}
+                  <div class="card">
+                    <div class="card-body">
+                      {{data.name}}
+                    </div>
+                  </div>
+                 
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
+             <!-- ACCORDION ITEM 4 -->
+             <div class="accordion-item shadow mb-3">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  NON TECHNOLOGICAL SKILLS
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  {% for data in personalSkills %}
+                  <div class="card">
+                    <div class="card-body">
+                      {{data.name}}
+                    </div>
+                  </div>
+                 
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////
+                              START SECTION 7 - THE PORTFOLIO  
+//////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <div class="row text-center mt-5">
+        <h1 class="display-3 fw-bold text-capitalize">My projects</h1>
+        <div class="heading-line"></div>
+        <p class="lead">
+          Here are some of my best projects i have build with my skills
+        </p>
+      </div>
+      <!-- FILTER BUTTONS  -->
+      <div class="row mt-5 mb-4 g-3 text-center">
+        <div class="col-md-12">
+          <button class="btn btn-outline-primary" type="button">ALL PROJECTS</button>
+
+        </div>
+      </div>
+
+      <!-- START THE PORTFOLIO ITEMS  -->
+      <div class="row">
+        {% for project in projects %}
+        <div class="col-lg-4 col-md-6">
+          <div class="portfolio-box shadow">
+            <img src="{{project.img.url}}" alt="portfolio 1 image" title="portfolio 1 picture"
+              class="img-fluid">
+            <div class="portfolio-info">
+              <div class="caption">
+                <h4>{{project.name}}</h4>
+                <a class="btn btn-primary" href="#">View Project</a>
+                <a class="btn btn-primary my-2" href="#">View Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+   
+      </div>
+    </div>
+  </section>
+
+  <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////
+              START SECTION 8 - GET STARTED  
+/////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+  <section id="contact" class="get-started">
+    <div class="container">
+      <div class="row text-center">
+        <h1 class="display-3 fw-bold text-capitalize">GET IN TOUCH</h1>
+        <div class="heading-line"></div>
+        <p class="lh-lg">
+        </p>
+      </div>
+
+      <!-- START THE CTA CONTENT  -->
+      <div class="row text-white">
+        <div class="col-12 col-lg-6 gradient shadow p-3">
+          <div class="cta-info w-100">
+            <h4 class="display-4 fw-bold">Connect on Social Media</h4>
+           
+            <h3 class="display-3--brief">What will be the next step?</h3>
+            <div class="col-lg-7 col-md-6">
+              <ul>
+                <li class="fs-3 text-light"><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
+                <li class="fs-3"><a href="#"><i class="fab fa-facebook"></i>Facebook</a></li>
+                <li class="fs-3"><a href="#"><i class="fab fa-github"></i>Github</a></li>
+                <li class="fs-3"><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
+                <li class="fs-3"><a href="#"><i class="fab fa-linkedin"></i>Linkedin</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 bg-white shadow p-3">
+          <div class="form w-100 pb-2">
+            <h4 class="display-3--title mb-5">send me a message</h4>
+            <form action="#" class="row">
+              <div class="col-lg-6 col-md mb-3">
+                <input type="text" placeholder="First Name" id="inputFirstName"
+                  class="shadow form-control form-control-lg">
+              </div>
+              <div class="col-lg-6 col-md mb-3">
+                <input type="text" placeholder="Last Name" id="inputLastName"
+                  class="shadow form-control form-control-lg">
+              </div>
+              <div class="col-lg-12 mb-3">
+                <input type="email" placeholder="email address" id="inputEmail"
+                  class="shadow form-control form-control-lg">
+              </div>
+              <div class="col-lg-12 mb-3">
+                <textarea name="message" placeholder="message" id="message" rows="8"
+                  class="shadow form-control form-control-lg"></textarea>
+              </div>
+              <div class="text-center d-grid mt-1">
+                <button type="button" class="btn btn-primary rounded-pill pt-3 pb-3">
+                  submit
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ///////////////////////////////////////////////////////////////////////////////////////////
+                           START SECTION 9 - THE FOOTER  
+///////////////////////////////////////////////////////////////////////////////////////////////-->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <!-- CONTENT FOR THE MOBILE NUMBER  -->
+        <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
+          <div class="contact-box__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone-call" viewBox="0 0 24 24"
+              stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+              <path d="M15 7a2 2 0 0 1 2 2" />
+              <path d="M15 3a6 6 0 0 1 6 6" />
+            </svg>
+          </div>
+          <div class="contact-box__info">
+            <a href="#" class="contact-box__info--title">+1 728365413</a>
+            <p class="contact-box__info--subtitle"> Mon-Fri 9am-6pm</p>
+          </div>
+        </div>
+        <!-- CONTENT FOR EMAIL  -->
+        <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
+          <div class="contact-box__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail-opened" viewBox="0 0 24 24"
+              stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <polyline points="3 9 12 15 21 9 12 3 3 9" />
+              <path d="M21 9v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" />
+              <line x1="3" y1="19" x2="9" y2="13" />
+              <line x1="15" y1="13" x2="21" y2="19" />
+            </svg>
+          </div>
+          <div class="contact-box__info">
+            <a href="#" class="contact-box__info--title">skyhightech93@gmail.com</a>
+            <p class="contact-box__info--subtitle">email</p>
+          </div>
+        </div>
+        <!-- CONTENT FOR LOCATION  -->
+        <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
+          <div class="contact-box__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-2" viewBox="0 0 24 24"
+              stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <line x1="18" y1="6" x2="18" y2="6.01" />
+              <path d="M18 13l-3.5 -5a4 4 0 1 1 7 0l-3.5 5" />
+              <polyline points="10.5 4.75 9 4 3 7 3 20 9 17 15 20 21 17 21 15" />
+              <line x1="9" y1="4" x2="9" y2="17" />
+              <line x1="15" y1="15" x2="15" y2="20" />
+            </svg>
+          </div>
+          <div class="contact-box__info">
+            <a href="#" class="contact-box__info--title">Ghana,Northern-Region,Tamale</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- START THE SOCIAL MEDIA CONTENT  -->
+    <div class="footer-sm" style="background-color: #212121;">
+      <div class="container">
+        <div class="row py-4 text-center text-white">
+          <div class="col-lg-5 col-md-6 mb-4 mb-md-0">
+            connect with me on social media
+          </div>
+          <div class="col-lg-7 col-md-6">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- START THE CONTENT FOR THE CAMPANY INFO -->
+    v>
+    </div>
+
+    <!-- START THE COPYRIGHT INFO  -->
+
+  </footer>
+
+  <!-- BACK TO TOP BUTTON  -->
+  <a href="#" class="shadow btn-primary rounded-circle back-to-top">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+
+
+
+
+  <script src="{% static 'assets/vendors/js/glightbox.min.js' %}"></script>
+
+  <script type="text/javascript">
+    const lightbox = GLightbox({
+      'touchNavigation': true,
+      'href': 'https://www.youtube.com/watch?v=J9lS14nM1xg',
+      'type': 'video',
+      'source': 'youtube', //vimeo, youtube or local
+      'width': 900,
+      'autoPlayVideos': 'true',
+    });
+  </script>
+  <script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
+</body>
+
+</html>
